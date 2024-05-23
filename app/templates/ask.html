@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Answering App - Preguntar</title>
+  </head>
+  <body>
+    <h1>Question Answering App - Preguntar</h1>
+
+    <form action="/ask" method="post">
+      <label for="question">Ingrese su pregunta:</label><br />
+      <input type="text" id="question" name="question" /><br />
+      <button type="submit">Preguntar</button>
+    </form>
+
+    {% if answer %}
+    <h2>Respuesta:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
+  </body>
+</html>
